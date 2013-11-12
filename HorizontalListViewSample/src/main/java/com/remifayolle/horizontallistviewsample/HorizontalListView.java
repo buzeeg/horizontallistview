@@ -18,7 +18,7 @@ import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 
 /**
- * A view that shows items in a vertically scrolling list. The items
+ * A view that shows items in a horizontal scrolling list. The items
  * come from the {@link ListAdapter} associated with this view.
  *
  * <p>See the <a href="{@docRoot}guide/topics/ui/layout/listview.html">List View</a>
@@ -77,7 +77,7 @@ public class HorizontalListView extends HorizontalScrollView {
     }
 
     /**
-     * HorizontalListView construtor.
+     * HorizontalListView constructor.
      * @param context
      * @param attributeSet
      */
