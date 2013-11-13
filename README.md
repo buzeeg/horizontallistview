@@ -13,14 +13,14 @@ How to use the simple horizontal listview
 -----------------------------------------
 1. Add the file [HorizontalListView.java](https://github.com/buzeeg/horizontallistview/blob/master/HorizontalListViewSample/src/main/java/com/remifayolle/horizontallistviewsample/HorizontalListView.java) file in your project.
 2. Include the `HorizontalListView` in your layout file :
-```
+
     <com.remifayolle.horizontallistviewsample.HorizontalListView
         android:id="@+id/listview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-```
+
 3. In your activity or fragment, implement the `HorizontalListView.OnClickListener` and initialize the listView with an adapter and the `OnClickListener` :
-```
+```java
 public class MainActivity extends Activity implements HorizontalListView.OnListItemClickListener {
 
     private BaseAdapter mAdapter = null;
