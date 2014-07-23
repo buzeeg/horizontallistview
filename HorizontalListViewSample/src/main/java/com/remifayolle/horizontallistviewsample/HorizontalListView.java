@@ -82,9 +82,9 @@ public class HorizontalListView extends HorizontalScrollView {
     /**
      * Custom OnClickListener for list item
      */
-    public class CustoOnClickListener implements OnClickListener {
+    public class CustomOnClickListener implements OnClickListener {
         private int mPosition;
-        public CustoOnClickListener(int position) {
+        public CustomOnClickListener(int position) {
             mPosition = position;
         }
         @Override
@@ -130,7 +130,7 @@ public class HorizontalListView extends HorizontalScrollView {
         for (int i = 0; i < adapter.getCount(); i++) {
             View v = adapter.getView(i, null, mContainer);
             if (v != null) {
-                v.setOnClickListener(new CustoOnClickListener(i));
+                v.setOnClickListener(new CustomOnClickListener(i));
                 mContainer.addView(v);
             }
         }
